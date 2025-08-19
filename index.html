@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devansh Gupta – Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assests/css/index.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+<!-- ============== NAVIGATION BAR ============== -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <h2><a href="index.html" aria-label="Devansh Gupta - Go to homepage">Devansh Gupta</a></h2>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu" role="menubar" aria-hidden="false">
+            <li class="nav-item" role="none">
+                <a href="index.html" class="nav-link" role="menuitem">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="blogs.html" class="nav-link" role="menuitem">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                    <span>Stories</span>
+                </a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="tech-projects.html" class="nav-link" role="menuitem">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <span>Tech Projects</span>
+                </a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="for-recruiters.html" class="nav-link" role="menuitem">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    <span>For Recruiters</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="nav-controls">
+            <button class="nav-toggle" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+  <!-- ============== HOME/HERO SECTION ============== -->
+  <!-- Main landing section with introduction and call-to-action buttons -->
+  <section id="home" class="section home-section">
+    <div class="container">
+      <div class="hero-content">
+        
+        <!-- Main introduction text -->
+        <div class="hero-text">
+          <!-- Main heading with name -->
+          <h1 class="hero-title">Hello, I'm <span class="highlight">Devansh Gupta</span></h1>
+          
+          <!-- Updated subtitle with your personal tagline -->
+          <h2 class="hero-subtitle">Writer by heart, Engineer by brain, Storyteller by soul</h2>
+          
+          <!-- Brief description about yourself -->
+          <!-- ============== MINI SECTIONS ============== -->
+          <!-- Three quick navigation sections as requested -->
+          <div class="hero-sections">
+            <!-- Section 1: For Readers -->
+            <div class="mini-section">
+              <h3>For Readers</h3>
+              <p>Explore my thoughts, stories, and insights</p>
+              <button class="btn btn-outline" type="button" onclick="window.location.href='blogs.html'">
+                Read My Blogs
+              </button>
+            </div>
+
+            <!-- Section 2: For Recruiters -->
+            <div class="mini-section">
+              <h3>For Recruiters</h3>
+              <p>Professional experience and capabilities</p>
+              <button class="btn btn-outline" type="button" onclick="window.location.href='for-recruiters.html'">
+                View Resume
+              </button>
+            </div>
+
+            <!-- Section 3: Projects -->
+            <div class="mini-section">
+              <h3>Projects</h3>
+              <p>Technical projects and innovations</p>
+              <button class="btn btn-outline" type="button" onclick="window.location.href='tech-projects.html'">
+                Explore Work
+              </button>
+            </div>
+          </div>
+
+          <!-- ============== SOCIAL LINKS ============== -->
+          <!-- Professional and coding platform links -->
+          <div class="social-links">
+            <!-- GitHub - For code repositories -->
+            <a class="social-link" href="https://github.com/devanshgupta" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            
+            <!-- LinkedIn - Professional networking -->
+            <a class="social-link" href="https://linkedin.com/in/devanshgupta" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            
+            <!-- LeetCode - Coding practice and algorithms -->
+            <a class="social-link" href="https://leetcode.com/devanshgupta" target="_blank" rel="noopener">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              <span class="sr-only">LeetCode</span>
+            </a>
+            
+            <!-- HackerRank - Programming challenges and skills -->
+            <a class="social-link" href="https://hackerrank.com/devanshgupta" target="_blank" rel="noopener">
+              <i class="fab fa-hackerrank" aria-hidden="true"></i>
+              <span class="sr-only">HackerRank</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Devansh Gupta. All rights reserved. </p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html" aria-current="page">Stories</a>
+                    <a href="tech-projects.html">Projects</a>
+                    <a href="jobs.html">For Recruiters</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- ============== JAVASCRIPT FILES ============== -->
+  <!-- Add your JavaScript files here -->
+  <script src="assets/js/script.js"></script>
+  
+  <!-- Theme toggle functionality -->
+  <script>
+    // Set dark mode as default when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      const html = document.documentElement;
+      html.classList.add('dark');
+      
+      // Update theme toggle icon
+      const themeToggle = document.getElementById('theme-toggle');
+      const icon = themeToggle.querySelector('i');
+      icon.className = 'fas fa-sun'; // Show sun icon in dark mode
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Projects - Devansh Gupta | Portfolio</title>
+    
+    <!-- IMPORTANT: Update this to match your actual CSS filename -->
+    <link rel="stylesheet" href="assests/css/tech.css">
+    <!-- OR if you renamed it: -->
+    <!-- <link rel="stylesheet" href="assets/css/tech-projects.css"> -->
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Theme Color Meta -->
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+    <!-- Skip to Main Content Link for Accessibility -->
+   
+
+    <!-- ============== NAVIGATION BAR ============== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" aria-label="Devansh Gupta - Go to homepage">Devansh Gupta</a></h2>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar" aria-hidden="false">
+                <li class="nav-item" role="none">
+                    <a href="index.html" class="nav-link" role="menuitem">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="blogs.html" class="nav-link" role="menuitem">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                        <span>Stories</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="tech-projects.html" class="nav-link active" role="menuitem" aria-current="page">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                        <span>Tech Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="jobs.html" class="nav-link" role="menuitem">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        <span>For Recruiters</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="nav-toggle" id="mobile-menu" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                    <span class="bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============== MAIN CONTENT ============== -->
+    <main id="main-content">
+        <!-- ============== HERO/BANNER SECTION ============== -->
+        <section class="page-hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title" class="page-title">Tech Projects</h1>
+                    <p class="page-subtitle">A showcase of my technical skills, creativity, and problem-solving abilities</p>
+                    
+                    <div class="hero-stats" role="region" aria-label="Project statistics">
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="Number of projects">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="Number of technologies">8</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" aria-label="Years of experience">0 Years</span>
+                            <span class="stat-label">Currently Fresher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== PROJECT FILTERS ============== -->
+        <section class="project-filters" aria-labelledby="filters-title">
+            <div class="container">
+                <h2 id="filters-title" class="sr-only">Filter projects by technology</h2>
+                <div class="filter-controls" role="group" aria-label="Project category filters">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">
+                        <i class="fas fa-layer-group" aria-hidden="true"></i>
+                        All Projects
+                    </button>
+                    <button class="filter-btn" data-filter="cpp" aria-pressed="false">
+                        <i class="fab fa-cuttlefish" aria-hidden="true"></i>
+                        C++
+                    </button>
+                    <button class="filter-btn" data-filter="python" aria-pressed="false">
+                        <i class="fab fa-python" aria-hidden="true"></i>
+                        Python
+                    </button>
+                    <button class="filter-btn" data-filter="javascript" aria-pressed="false">
+                        <i class="fab fa-js-square" aria-hidden="true"></i>
+                        JavaScript
+                    </button>
+                    <button class="filter-btn" data-filter="react" aria-pressed="false">
+                        <i class="fab fa-react" aria-hidden="true"></i>
+                        React
+                    </button>
+                    <button class="filter-btn" data-filter="nodejs" aria-pressed="false">
+                        <i class="fab fa-node-js" aria-hidden="true"></i>
+                        Node.js
+                    </button>
+                    <button class="filter-btn" data-filter="database" aria-pressed="false">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                        Database
+                    </button>
+                    <button class="filter-btn" data-filter="datascience" aria-pressed="false">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        Data Science
+                    </button>
+                    <button class="filter-btn" data-filter="machine-learning" aria-pressed="false">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        Machine Learning
+                    </button>
+                    <button class="filter-btn" data-filter="visualization" aria-pressed="false">
+                        <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                        Data Visualization
+                    </button>
+                    <button class="filter-btn" data-filter="cloud" aria-pressed="false">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        Cloud/Deployment
+                    </button>
+                    <button class="filter-btn" data-filter="tools" aria-pressed="false">
+                        <i class="fas fa-tools" aria-hidden="true"></i>
+                        Dev Tools
+                    </button>
+                    <button class="filter-btn" data-filter="api" aria-pressed="false">
+                        <i class="fas fa-plug" aria-hidden="true"></i>
+                        APIs
+                    </button>
+                </div>
+                
+                <!-- Results Counter -->
+                <div class="filter-results" aria-live="polite">
+                    <span id="projects-count" class="results-count">Showing all projects</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== ALL PROJECTS GRID ============== -->
+        <section class="all-projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">All Projects</h2>
+                
+                <div class="projects-wrapper">
+                    <div class="projects-scroll-container" id="projectsScrollContainer" role="region" aria-label="Projects list" tabindex="0">
+                        <div class="projects-grid">
+                            
+                            <!-- ============== PROJECT 1: Weather Data Analysis (ACTIVE) ============== -->
+                            <article class="project-card" data-category="python visualization datascience" role="article" tabindex="0">
+                                <div class="project-image">
+                                    <div class="project-placeholder">
+                                        <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" aria-label="View Weather Data Analysis project" title="View Project">
+                                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="https://github.com/devansh-112/Weather-Data-Analysis-Dashboard.git" class="project-link" aria-label="View source code on GitHub" title="Source Code" target="_blank" rel="noopener noreferrer">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="project-status">
+                                        <span class="status-badge development">In Development</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-content">
+                                    <h3 class="project-title">Weather Data Analysis Dashboard</h3>
+                                    <p class="project-description">
+                                        This project analyzes weather data from the last 3 years using Python, NumPy, and Matplotlib to create interactive graph visualizations and statistical insights.
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag python">Python</span>
+                                        <span class="tech-tag">Matplotlib</span>
+                                        <span class="tech-tag">NumPy</span>
+                                        <span class="tech-tag">Pandas</span>
+                                    </div>
+                                    <div class="project-metrics">
+                                        <div class="metric">
+                                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                            <span>Data Analysis</span>
+                                        </div>
+                                        <div class="metric">
+                                            <i class="fas fa-calendar" aria-hidden="true"></i>
+                                            <span>3 Years Data</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- ============== PROJECT 2: More Projects Coming Soon ============== -->
+                            <article class="project-card" data-category="all" role="article" tabindex="0">
+                                <div class="project-image">
+                                    <div class="project-placeholder">
+                                        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="project-overlay">
+                                        <div class="project-links">
+                                            <span class="project-link disabled" aria-label="Coming soon" title="Coming Soon">
+                                                <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+                                            </span>
+                                            <span class="project-link disabled" aria-label="Coming soon" title="Coming Soon">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="project-status">
+                                        <span class="status-badge coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-content">
+                                    <h3 class="project-title">More Projects Coming Soon</h3>
+                                    <p class="project-description">
+                                        I'm currently working on several exciting projects including machine learning applications, web development projects, and data science solutions. Stay tuned for updates!
+                                    </p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag python">Python</span>
+                                        <span class="tech-tag javascript">JavaScript</span>
+                                        <span class="tech-tag cpp">C++</span>
+                                        <span class="tech-tag react">React</span>
+                                    </div>
+                                    <div class="project-metrics">
+                                        <div class="metric">
+                                            <i class="fas fa-clock" aria-hidden="true"></i>
+                                            <span>In Development</span>
+                                        </div>
+                                        <div class="metric">
+                                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                                            <span>Multiple Technologies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Scroll Progress Indicator -->
+                    <div class="projects-scroll-indicator" aria-hidden="true">
+                        <div class="projects-scroll-progress" id="projectsScrollProgress"></div>
+                    </div>
+                    
+                    <!-- Scroll Control Buttons -->
+                    <div class="projects-scroll-controls">
+                        <button class="projects-scroll-btn" id="projectsScrollUp" aria-label="Scroll projects up" title="Scroll Up">
+                            <i class="fas fa-chevron-up" aria-hidden="true"></i>
+                        </button>
+                        <button class="projects-scroll-btn" id="projectsScrollDown" aria-label="Scroll projects down" title="Scroll Down">
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== GITHUB STATISTICS ============== -->
+        <section class="github-stats" aria-labelledby="github-title">
+            <div class="container">
+                <h2 id="github-title" class="section-title">GitHub Activity</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">15+</h3>
+                            <p class="stat-label">Repositories</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">0</h3>
+                            <p class="stat-label">Stars Earned</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code-branch" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">30+</h3>
+                            <p class="stat-label">Commits</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">0</h3>
+                            <p class="stat-label">Followers</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="github-link">
+                    <a href="https://github.com/devansh-112" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        View My GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Devansh Gupta. All rights reserved. </p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html" aria-current="page">Stories</a>
+                    <a href="tech-projects.html">Projects</a>
+                    <a href="jobs.html">For Recruiters</a>
+                </div>
+            </div>
+        </div>
+    </footer>
