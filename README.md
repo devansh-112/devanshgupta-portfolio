@@ -3,32 +3,7 @@
 
 A modern, responsive portfolio website showcasing projects, blogs, and professional information.
 
-## Project Structure
 
-```
-portfolio/
-├── .github/workflows/
-│   └── static.yml          # GitHub Pages deployment configuration
-├── assets/
-│   ├── css/                # All stylesheets
-│   │   ├── index.css       # Homepage styles
-│   │   ├── blogs.css       # Blog page styles
-│   │   ├── tech.css        # Tech projects page styles
-│   │   └── recruiters.css  # Recruiters page styles
-│   ├── js/                 # All JavaScript files
-│   │   ├── script.js       # Main JavaScript (navigation, theme toggle)
-│   │   ├── blogs.js        # Blog page functionality
-│   │   ├── projects.js     # Projects page functionality
-│   │   └── recruiters.js   # Recruiters page functionality
-│   └── images/             # All images and media files
-│       └── project1.jpeg   # Project image
-├── index.html              # Homepage
-├── blogs.html              # Blog listing page
-├── tech-projects.html      # Technical projects showcase
-├── for-recruiters.html     # Professional information for recruiters
-├── .replit                 # Replit configuration
-└── README.md               # This file
-```
 
 ## Features
 
